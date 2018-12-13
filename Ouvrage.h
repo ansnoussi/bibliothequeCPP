@@ -1,10 +1,11 @@
 
 #ifndef OUVRAGE_H
 #define OUVRAGE_H
+#include <string>
 using namespace std;
 
 class Ouvrage{
-private:
+protected:
     string titre;
     string dateCreation;
     bool existe;

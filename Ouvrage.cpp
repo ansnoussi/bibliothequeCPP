@@ -3,7 +3,10 @@
 #include <cstring>
 using namespace std;
 
-    Ouvrage::Ouvrage(){
+    Ouvrage::Ouvrage(string title , string creDate , bool exi){
+        titre = title;
+        dateCreation = creDate;
+        existe = exi;
     }
 
     Ouvrage::~Ouvrage(){
