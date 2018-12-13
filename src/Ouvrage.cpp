@@ -12,4 +12,3 @@ using namespace std;
     Ouvrage::~Ouvrage(){
         cout << "Object Ouvrage deleted !" << endl;
     }
-}

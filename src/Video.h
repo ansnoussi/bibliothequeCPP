@@ -1,17 +1,17 @@
-
-#ifndef LIVRE_H
-#define LIVRE_H
+#ifndef VIDEO_H
+#define VIDEO_H
 #include <string>
 #include "Ouvrage.h"
 using namespace std;
 
-class Livre : public Ouvrage{
+class Video : public Ouvrage{
 private:
-    string auteur;
+    string editeur;
+    double duree;
 public:
-    Livre();
-    ~Livre();
+    Video(string title, string creDate , bool exi , string editor , double length);
+    ~Video();
 };
 
 
-#endif /* LIVRE_H */
+#endif /* VIDEO_H */

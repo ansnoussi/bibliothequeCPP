@@ -9,7 +9,7 @@ class Livre : public Ouvrage{
 private:
     string auteur;
 public:
-    Livre();
+    Livre(string title, string creDate , bool exi , string author);
     ~Livre();
 };
 

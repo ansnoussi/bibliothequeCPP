@@ -1,12 +1,16 @@
 #include <iostream>
-#include "Livre.h"
+#include "Video.h"
 #include <cstring>
 using namespace std;
 
-    Livre::Livre(string title, string creDate , bool exi , string author) : Ouvrage(title,creDate,exi){
-        auteur = author;
+    Video::Video(string title, string creDate , bool exi , string editor , double length){
+        titre = title;
+        dateCreation = creDate;
+        existe = exi;
+        editeur = editor;
+        duree = length;
     }
 
-    Livre::~Livre(){
-        cout << "Object Livre deleted !" << endl;
+    Video::~Video(){
+        cout << "Object Video deleted !" << endl;
     }

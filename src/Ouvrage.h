@@ -10,6 +10,7 @@ protected:
     string dateCreation;
     bool existe;
 public:
+    Ouvrage(string title , string creDate , bool exi);
     Ouvrage();
     ~Ouvrage();
 };
