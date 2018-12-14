@@ -13,6 +13,7 @@ public:
     Ouvrage(string title , string creDate , bool exi);
     Ouvrage();
     ~Ouvrage();
+    string getTitre();
 };
 
 
