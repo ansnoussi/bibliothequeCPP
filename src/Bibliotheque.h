@@ -17,9 +17,9 @@ public:
     Bibliotheque();
     ~Bibliotheque();
     void ajoutOuvrage(Ouvrage O);
-    Ouvrage getOuvrage(string nom);
+    Ouvrage* getOuvrage(string nom);
     void ajoutAbonne(Abonne A);
-    Abonne getAbonne(int id);
+    Abonne* getAbonne(int id);
     void emprunt(int id,string nom);
     void rendre(int id);
     bool testExistenceOuv(string title);

@@ -9,14 +9,13 @@ private:
     int ID;
     string nom;
     int numAbonnement;
-    Ouvrage ouvragePris;
+    Ouvrage* ouvragePris;
 public:
-    Abonne(int id , string nom , int numAbonnement , Ouvrage ouvragePris );
+    Abonne(int id , string nom , int numAbonnement);
     ~Abonne();
     int getID();
-    Ouvrage getOuvrageEnCours();
-    
-    void setOuvrage(Ouvrage O);
+    Ouvrage* getOuvrageEnCours();
+    void setOuvrage(Ouvrage* O);
 };
 
 

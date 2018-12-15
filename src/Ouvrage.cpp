@@ -14,6 +14,7 @@ using namespace std;
 }
 
 
+
     string Ouvrage::getTitre(){
         return titre;
     }
