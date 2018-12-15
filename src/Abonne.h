@@ -1,4 +1,3 @@
-
 #ifndef ABONNE_H
 #define ABONNE_H
 #include <string>
@@ -7,14 +6,19 @@ using namespace std;
 
 class Abonne{
 private:
-    int id;
+    int ID;
     string nom;
-    int numAbon;
-    Ouvrage ouvrPris;
+    int numAbonnement;
+    Ouvrage ouvragePris;
 public:
-    Abonne(int identificateur , string name , int abon , Ouvrage &ouvr );
+    Abonne(int id , string nom , int numAbonnement , Ouvrage ouvragePris );
     ~Abonne();
+    int getID();
+    Ouvrage getOuvrageEnCours();
+    
+    void setOuvrage(Ouvrage O);
 };
 
 
 #endif /* ABONNE_H */
+

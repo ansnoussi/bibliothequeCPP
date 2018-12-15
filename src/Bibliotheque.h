@@ -1,26 +1,32 @@
-
 #ifndef BIBLIOTHEQUE_H
 #define BIBLIOTHEQUE_H
 #include <string>
+#include <vector>
 #include "Ouvrage.h"
 #include "Abonne.h"
-#define NBR_OUV 100
-#define NBR_ABON 50
+#include "Livre.h"
+
 using namespace std;
 
 class Bibliotheque{
 private:
-    Ouvrage ouv[NBR_OUV];
-    Abonne abon[NBR_ABON];
-    int nbrOuvrages = NBR_OUV;
-    int nbrAbonne = NBR_ABON;
+    vector <Abonne> LesAbonnes;
+    vector <Ouvrage> LesOuvrages;
 
 public:
     Bibliotheque();
     ~Bibliotheque();
-    int ajoutOuvrage(Ouvrage &ouvr);
-    bool ouvrExiste(string title);
+    void ajoutOuvrage(Ouvrage O);
+    Ouvrage getOuvrage(string nom);
+    void ajoutAbonne(Abonne A);
+    Abonne getAbonne(int id);
+    void emprunt(int id,string nom);
+    void rendre(int id);
+    bool testExistenceOuv(string title);
+    bool testExistenceAbo(int id);
+    void info();
 };
 
 
 #endif /* BIBLIOTHEQUE_H */
+

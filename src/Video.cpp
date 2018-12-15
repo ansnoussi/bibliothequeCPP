@@ -3,14 +3,10 @@
 #include <cstring>
 using namespace std;
 
-    Video::Video(string title, string creDate , bool exi , string editor , double length){
-        titre = title;
-        dateCreation = creDate;
-        existe = exi;
-        editeur = editor;
-        duree = length;
-    }
-
-    Video::~Video(){
-        cout << "Object Video deleted !" << endl;
+    Video::Video(string titre , string dateCreation , bool existe, string editeur , double duree){
+        this->titre = titre;
+        this->dateCreation = dateCreation;
+        this->existe = existe;
+        this->editeur = editeur;
+        this->duree = duree;
     }

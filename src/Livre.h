@@ -1,4 +1,3 @@
-
 #ifndef LIVRE_H
 #define LIVRE_H
 #include <string>
@@ -9,9 +8,10 @@ class Livre : public Ouvrage{
 private:
     string auteur;
 public:
-    Livre(string title, string creDate , bool exi , string author);
-    ~Livre();
+    Livre(string titre , string dateCreation , bool existe, string auteur);
 };
 
 
+
 #endif /* LIVRE_H */
+

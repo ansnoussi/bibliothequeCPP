@@ -1,17 +1,30 @@
+
 #include <iostream>
 #include "Ouvrage.h"
 #include <cstring>
 using namespace std;
 
-    Ouvrage::Ouvrage(string title , string creDate , bool exi){
-        titre = title;
-        dateCreation = creDate;
-        existe = exi;
+    Ouvrage::Ouvrage(string titre , string dateCreation , bool existe){
+        this->titre = titre;
+        this->dateCreation = dateCreation;
+        this->existe = existe;
     }
+    Ouvrage::Ouvrage() {
 
-    Ouvrage::~Ouvrage(){
-        cout << "Object Ouvrage deleted !" << endl;
-    }
+}
+
+
     string Ouvrage::getTitre(){
         return titre;
     }
+    
+    
+    bool Ouvrage::getStatue() {
+        return existe;
+}
+    void Ouvrage::setStatue(bool e) {
+        existe = e;
+}
+    
+
+

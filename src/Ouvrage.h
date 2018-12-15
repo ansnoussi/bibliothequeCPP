@@ -1,4 +1,3 @@
-
 #ifndef OUVRAGE_H
 #define OUVRAGE_H
 #include <string>
@@ -10,11 +9,14 @@ protected:
     string dateCreation;
     bool existe;
 public:
-    Ouvrage(string title , string creDate , bool exi);
+    Ouvrage(string titre , string dateCreation , bool existe);
     Ouvrage();
-    ~Ouvrage();
     string getTitre();
+    bool getStatue();
+    void setStatue(bool e);
 };
 
 
+
 #endif /* OUVRAGE_H */
+

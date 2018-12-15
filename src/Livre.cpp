@@ -3,13 +3,9 @@
 #include <cstring>
 using namespace std;
 
-    Livre::Livre(string title, string creDate , bool exi , string author){
-        titre = title;
-        dateCreation = creDate;
-        existe = exi;
-        auteur = author;
-    }
-
-    Livre::~Livre(){
-        cout << "Object Livre deleted !" << endl;
+    Livre::Livre(string titre , string dateCreation , bool existe, string auteur){
+        this->titre = titre;
+        this->dateCreation = dateCreation;
+        this->existe = existe;
+        this->auteur = auteur;
     }

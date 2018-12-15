@@ -9,9 +9,9 @@ private:
     string editeur;
     double duree;
 public:
-    Video(string title, string creDate , bool exi , string editor , double length);
-    ~Video();
+    Video(string titre , string dateCreation , bool existe, string editeur , double duree);
 };
 
 
 #endif /* VIDEO_H */
+
